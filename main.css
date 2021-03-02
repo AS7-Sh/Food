@@ -1,0 +1,226 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body
+{
+    scroll-behavior: smooth;
+}
+
+header.main-header
+{
+    background-image:url("fastFood.jpg");
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow:auto;
+}
+
+p.welcome
+{
+    font-size:3.4em;
+    font-family:impact;
+    margin-top:35vh;
+    margin-left:9%;
+    text-transform:uppercase;
+    color: #ec9918;
+}
+
+section.nav-conteiner 
+{
+    margin-left:9%;
+    margin-top:50px;
+    text-decoration:none;
+    display:flex;
+}
+
+section.nav-conteiner a
+{
+    text-decoration:none;
+    color:#fff;
+    font-size:1.5em;
+    padding:5px;
+    border-radius:5px;
+    width:100px;
+    text-align:center;
+}
+
+section.nav-conteiner a:first-of-type
+{
+    margin-right:1%;
+    background-color:#ec9918;
+}
+
+section.nav-conteiner a:last-of-type
+{
+    background-color:red;
+}
+
+section.make-the-recipe
+{
+    padding:20px;
+    background-color: #ddd;
+}
+
+section.make-the-recipe h1
+{
+    text-align:center;
+    padding:5px;
+    background-color: #ec9918;
+    color:#fff;
+    width:400px;
+    margin:auto;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+section.make-the-recipe h1:hover
+{
+    animation: change 1s infinite;
+}
+
+@keyframes change
+{
+    0%,100%
+    {
+        color:#fff;
+    }
+    50%
+    {
+        color:#520206;
+    }
+}
+
+section.process-container
+{
+    display:flex;
+    justify-content: space-around;
+    flex-direction:row;
+    margin-top:10px;
+}
+
+@media (max-width:600px)
+{
+    section.process-container
+    {
+        flex-direction: column;
+    }
+    section.determine
+    {
+        margin-bottom: 15px;
+    }
+    section.calculate article
+    {
+       padding:10px;
+    }
+}
+
+section.determine
+{
+    flex-basis: 40%;
+    background:linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)),url("calculate.jpg");
+    text-align: center;
+    padding:10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section.determine article
+{
+    font-size:25px;
+    color:#fff;
+    margin-bottom: 10px;
+    position: relative;
+    padding:10px;
+    border-bottom:1px solid #eee;
+}
+
+section.determine article:last-of-type
+{
+    border:none;
+    padding-bottom:0;
+}
+
+section.determine article button
+{
+    display: inline-block;
+    width:40px;
+    height:40px;
+    font-size:20px;
+    border-radius: 50%;
+    border:none;
+}
+
+section.determine article button:nth-child(2)
+{
+    background-color: #ec9918;
+}
+
+section.determine article button:nth-child(3)
+{
+    background-color: red;
+}
+
+
+section.determine article button:focus
+{
+    outline: none;
+}
+
+
+section.determine article span
+{
+    display: inline-block;
+    width:180px;
+    font-size:28px;
+}
+
+
+section.calculate
+{
+    background:linear-gradient(rgba(0,0,0,0.78),rgba(0,0,0,0.78)),url("final.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    flex-basis: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:10px;
+}
+
+section.calculate article
+{
+    font-size:25px;
+    color:#fff;
+    position: relative;
+}
+
+section.calculate article span:first-child
+{
+    display: inline-block;
+    width:190px;
+}
+
+section.calculate article span:last-child
+{
+    display: inline-block;
+    width:100px;
+}
+
+section.calculate article span:last-child
+{
+    color:#ec9918;
+}
+
+footer
+{
+    background-color: #520206;
+    color:#fff;
+    padding:20px;
+    text-align:center;
+}
